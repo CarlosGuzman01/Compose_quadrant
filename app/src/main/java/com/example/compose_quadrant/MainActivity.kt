@@ -83,7 +83,12 @@ fun ComposeQuadrant(modifier: Modifier = Modifier){
 @Composable
 fun infoCard(firstLine: String, secondLine: String, backgroundColor: Color, modifier: Modifier = Modifier) {
 
-    Column(modifier = modifier.padding(16.dp).fillMaxSize().background(backgroundColor),  verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
+    Column(  modifier = modifier
+        .fillMaxSize()
+        .background(backgroundColor)
+        .padding(16.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally) {
         Text(
             text = firstLine,
             modifier = Modifier.padding(bottom = 16.dp),
